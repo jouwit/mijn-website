@@ -20,14 +20,14 @@ export default function TarievenPage() {
       </section>
 
       <section className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 lg:grid-cols-3">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="grid gap-8 md:grid-cols-2">
             
             {/* Kaart 1: Computerhulp */}
             <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-between">
               <div>
-                <p className="text-sm font-bold uppercase tracking-wider text-blue-600">Particulier</p>
-                <h3 className="mt-2 text-2xl font-bold">Computerhulp & Service</h3>
+                <p className="text-sm font-bold uppercase tracking-wider text-blue-600">Particulier &amp; Klein Zakelijk</p>
+                <h3 className="mt-2 text-2xl font-bold">Computerhulp &amp; Service</h3>
                 <p className="mt-4 text-sm text-slate-500 leading-6">
                   Hulp aan huis of op locatie voor al je computer- en laptop-problemen, opschonen en installaties.
                 </p>
@@ -36,9 +36,9 @@ export default function TarievenPage() {
                   <p className="mt-1 text-xs text-slate-400">Inclusief btw (voorrijkosten in overleg)</p>
                 </div>
                 <ul className="mt-6 space-y-3 text-sm text-slate-600">
-                  <li className="flex items-center gap-2">✓ PC & Laptop APK / Opschonen</li>
+                  <li className="flex items-center gap-2">✓ PC &amp; Laptop APK / Opschonen</li>
                   <li className="flex items-center gap-2">✓ Trage systemen versnellen</li>
-                  <li className="flex items-center gap-2">✓ Wifi & printer installatie</li>
+                  <li className="flex items-center gap-2">✓ Wifi &amp; printer installatie</li>
                   <li className="flex items-center gap-2">✓ No cure, no pay garantie</li>
                 </ul>
               </div>
@@ -55,51 +55,25 @@ export default function TarievenPage() {
                 Populair voor ondernemers
               </div>
               <div>
-                <p className="text-sm font-bold uppercase tracking-wider text-blue-600">Zakelijk & ZZP</p>
+                <p className="text-sm font-bold uppercase tracking-wider text-blue-600">Zakelijk &amp; ZZP</p>
                 <h3 className="mt-2 text-2xl font-bold">Websitebeheer Maandpakket</h3>
                 <p className="mt-4 text-sm text-slate-600 leading-6">
-                  Zorgeloos je website up-to-date, veilig en snel gehost, inclusief kleine tekst- of wijzigingsverzoeken.
+                  Volledig ontzorgd technisch beheer, onderhoud, beveiliging en snelle probleemoplossing voor je bestaande website.
                 </p>
                 <div className="mt-6 border-t border-blue-100 pt-6">
-                  <p className="text-3xl font-extrabold text-slate-900">€ 35<span className="text-sm font-normal text-slate-500"> / maand</span></p>
+                  <p className="text-3xl font-extrabold text-slate-900">€ 400<span className="text-sm font-normal text-slate-500"> / maand</span></p>
                   <p className="mt-1 text-xs text-slate-500">Exclusief btw, maandelijks opzegbaar</p>
                 </div>
                 <ul className="mt-6 space-y-3 text-sm text-slate-700">
-                  <li className="flex items-center gap-2">✓ Veilige webhosting inbegrepen</li>
-                  <li className="flex items-center gap-2">✓ Wekelijkse beveiligingsupdates</li>
-                  <li className="flex items-center gap-2">✓ Inclusief kleine tekstwijzigingen</li>
-                  <li className="flex items-center gap-2">✓ Persoonlijk contact & advies</li>
+                  <li className="flex items-center gap-2">✓ Doorlopend onderhoud &amp; beveiligingsupdates</li>
+                  <li className="flex items-center gap-2">✓ Snelle hulp bij storingen &amp; foutmeldingen</li>
+                  <li className="flex items-center gap-2">✓ Back-ups, DNS &amp; hosting-ondersteuning</li>
+                  <li className="flex items-center gap-2">✓ Inclusief tekst- en inhoudswijzigingen</li>
                 </ul>
               </div>
               <div className="mt-8">
                 <a href="/#contact" className="block w-full rounded-xl bg-blue-600 px-6 py-3 text-center font-semibold text-white transition hover:bg-blue-700">
                   Pakket starten
-                </a>
-              </div>
-            </div>
-
-            {/* Kaart 3: Maatwerk Websites */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-between">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider text-blue-600">Webdesign</p>
-                <h3 className="mt-2 text-2xl font-bold">Nieuwe Website</h3>
-                <p className="mt-4 text-sm text-slate-500 leading-6">
-                  Een complete, professionele website die perfect werkt op zowel mobiel als desktop.
-                </p>
-                <div className="mt-6 border-t border-slate-100 pt-6">
-                  <p className="text-3xl font-extrabold text-slate-900">Vanaf € 499</p>
-                  <p className="mt-1 text-xs text-slate-400">Eenmalige investering op maat</p>
-                </div>
-                <ul className="mt-6 space-y-3 text-sm text-slate-600">
-                  <li className="flex items-center gap-2">✓ Modern en uniek webdesign</li>
-                  <li className="flex items-center gap-2">✓ Volledig mobielvriendelijk (responsive)</li>
-                  <li className="flex items-center gap-2">✓ Inclusief contactformulier</li>
-                  <li className="flex items-center gap-2">✓ Basis SEO-optimalisatie</li>
-                </ul>
-              </div>
-              <div className="mt-8">
-                <a href="/#contact" className="block w-full rounded-xl bg-slate-900 px-6 py-3 text-center font-semibold text-white transition hover:bg-blue-600">
-                  Offerte aanvragen
                 </a>
               </div>
             </div>

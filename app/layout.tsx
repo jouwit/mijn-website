@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Jouw IT",
   },
   description:
-    "Persoonlijke computerhulp aan huis, websitebeheer en zakelijk IT-advies in Enschede en Twente. Ook 's avonds en in het weekend.",
+    "Persoonlijke computerhulp aan huis, websitebeheer en zakelijk IT-advies in Almelo en Twente. Ook 's avonds en in het weekend.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

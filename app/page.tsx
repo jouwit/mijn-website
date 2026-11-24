@@ -382,7 +382,7 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
               {
                 vraag: "Wat zijn jullie werkgebieden voor computerhulp?",
                 antwoord:
-                  "Wij zijn gevestigd in Enschede en bieden computerhulp aan huis en op locatie in de hele regio Twente (o.a. Enschede, Hengelo, Lonneker en Glanerbrug).",
+                  "Wij zijn gevestigd in Almelo en bieden computerhulp aan huis en op locatie in de hele regio Twente (o.a. Enschede, Hengelo, Lonneker en Glanerbrug).",
               },
               {
                 vraag: "Wat betekent 'No cure, no pay' bij computerhulp?",

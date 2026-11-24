@@ -21,7 +21,7 @@ export default function TarievenPage() {
             Heldere tarieven, geen verrassingen.
           </h1>
           <p className="mt-6 text-lg leading-8 text-slate-300">
-            Eerlijke prijzen voor computerhulp, laptop service en websitebeheer in Enschede en omgeving.
+            Eerlijke prijzen voor computerhulp, laptop service en websitebeheer in Almgelo en omgeving.
           </p>
         </div>
       </section>

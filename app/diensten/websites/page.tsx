@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Header from "../../../components/Header";
+
+export const metadata: Metadata = {
+  title: "Websitebeheer & Onderhoud in Twente",
+  description:
+    "Technisch websitebeheer, updates, beveiliging en snelle probleemoplossing voor bestaande websites in Enschede en Twente.",
+};
 
 const deliverables = [
   {

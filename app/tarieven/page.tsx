@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Header from "../../components/Header";
+
+export const metadata: Metadata = {
+  title: "Tarieven Computerhulp & Websitebeheer",
+  description:
+    "Heldere en transparante tarieven voor computerhulp aan huis (€ 45/uur, no cure no pay) en zakelijk websitebeheer (€ 400/maand).",
+};
 
 export default function TarievenPage() {
   return (

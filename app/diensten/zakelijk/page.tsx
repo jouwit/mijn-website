@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Header from "../../../components/Header";
+
+export const metadata: Metadata = {
+  title: "Zakelijke IT & Microsoft 365 Beheer (ZZP & Klein MKB)",
+  description:
+    "Professioneel Microsoft 365 beheer, moderne beveiliging (MFA) en zakelijke e-mail voor zzp'ers en ondernemers in Twente. Onderhoud buiten kantoortijden mogelijk.",
+};
 
 const deliverables = [
   {

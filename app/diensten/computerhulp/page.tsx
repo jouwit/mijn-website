@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Header from "../../../components/Header";
+
+export const metadata: Metadata = {
+  title: "Computerhulp & Laptop Service aan Huis (Almelo & Twente)",
+  description:
+    "Snelle computerhulp aan huis: trage laptop versnellen, virussen verwijderen, Windows installatie en wifi-hulp. Ook 's avonds en in het weekend.",
+};
 
 const deliverables = [
   {

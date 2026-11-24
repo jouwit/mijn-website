@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Header from "../../../components/Header";
+
+export const metadata: Metadata = {
+  title: "Onafhankelijk IT-Advies & Probleemoplossing",
+  description:
+    "Eerlijk aankoopadvies voor laptops, thuisnetwerk & wifi verbeteren en slimme back-upoplossingen in begrijpelijke taal.",
+};
 
 const deliverables = [
   {

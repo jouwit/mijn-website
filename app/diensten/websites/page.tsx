@@ -4,7 +4,7 @@ import Header from "../../../components/Header";
 export const metadata: Metadata = {
   title: "Websitebeheer & Onderhoud in Twente",
   description:
-    "Technisch websitebeheer, updates, beveiliging en snelle probleemoplossing voor bestaande websites in Almleo en Twente.",
+    "Technisch websitebeheer, updates, beveiliging en snelle probleemoplossing voor bestaande websites in Almelo en Twente.",
 };
 
 const deliverables = [
@@ -95,7 +95,7 @@ export default function WebsitesDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 01 • BESTAANDE WEBSITES IN Almleo &amp; TWENTE
+                DIENST 01 • BESTAANDE WEBSITES IN Almelo &amp; TWENTE
               </span>
             </div>
 

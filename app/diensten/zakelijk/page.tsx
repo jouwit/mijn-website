@@ -223,7 +223,7 @@ export default function ZakelijkDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Neem vrijblijvend contact op om de mogelijkheden voor jouw
-                  onderneming in Enschede of omgeving te bespreken.
+                  onderneming in Almelo of omgeving te bespreken.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a

@@ -97,7 +97,7 @@ export default function ComputerhulpDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 02 • HULP AAN HUIS IN ENSCHEDE &amp; TWENTE
+                DIENST 02 • HULP AAN HUIS IN Almelo &amp; TWENTE
               </span>
             </div>
 
@@ -223,7 +223,7 @@ export default function ComputerhulpDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Geen vrij hoeven nemen van je werk: wij komen langs in de
-                  avonduren of in het weekend in Enschede en omgeving.
+                  avonduren of in het weekend in Almelo en omgeving.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a

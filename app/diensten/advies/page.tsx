@@ -97,7 +97,7 @@ export default function AdviesDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 03 • EERLIJK IT-ADVIES IN ENSCHEDE &amp; TWENTE
+                DIENST 03 • EERLIJK IT-ADVIES IN Almelo &amp; TWENTE
               </span>
             </div>
 

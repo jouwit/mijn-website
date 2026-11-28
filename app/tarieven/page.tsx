@@ -159,7 +159,7 @@ export default function TarievenPage() {
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   Voor zakelijke ondersteuning, Microsoft 365 werkplekken of
                   migraties rekenen we óf het uurtarief van{" "}
-                  <strong className="text-slate-900">€ 45 per uur</strong> óf een
+                  <strong className="text-slate-900">€ 80 per uur</strong> óf een
                   vooraf afgesproken projectprijs — zonder logge
                   jaarcontracten. Bekijk ook{" "}
                   <a

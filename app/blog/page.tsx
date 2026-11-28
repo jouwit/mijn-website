@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "../../../components/Header";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Wat kost een laptop opschonen? Uitleg & richtprijzen | Jouw IT",

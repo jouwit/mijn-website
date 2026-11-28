@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Header from "../../../components/Header";
 
 export const metadata: Metadata = {
-  title: "Zakelijke IT & Microsoft 365 Beheer (ZZP & Klein MKB)",
+  title:
+    "Zakelijke IT & Microsoft 365 Werkplekken Uitbesteden | ICT Bedrijf Twente",
   description:
-    "Professioneel Microsoft 365 beheer, moderne beveiliging (MFA) en zakelijke e-mail voor zzp'ers en ondernemers in Twente. Onderhoud buiten kantoortijden mogelijk.",
+    "Microsoft 365 werkplekken uitbesteden, moderne beveiliging (MFA) en zakelijke IT-oplossingen voor zzp'ers en bedrijven in Almelo, Enschede en Twente. Onderhoud buiten kantoortijden mogelijk.",
 };
 
 const deliverables = [
@@ -28,9 +29,9 @@ const deliverables = [
   },
   {
     icon: "💻",
-    title: "Zakelijke Werkplekken & Intune",
+    title: "Microsoft 365 Werkplekken & Intune",
     description:
-      "Nieuwe zakelijke laptops gebruiksklaar maken, beheren via Microsoft Intune en zorgen dat apparaten voldoen aan beveiligingsrichtlijnen.",
+      "Zakelijke werkplekken uitbesteden: nieuwe laptops gebruiksklaar maken, centraal beheren via Microsoft Intune en veilig inrichten voor hybride werken.",
   },
   {
     icon: "🔄",
@@ -97,7 +98,7 @@ export default function ZakelijkDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 04 • VOOR ZZP&apos;ERS &amp; KLEIN MKB IN TWENTE
+                DIENST 04 • ZAKELIJKE IT IN ALMELO, ENSCHEDE &amp; TWENTE
               </span>
             </div>
 
@@ -107,10 +108,11 @@ export default function ZakelijkDienstPage() {
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Als zzp&apos;er of kleine ondernemer wil je kunnen vertrouwen op
-              veilige zakelijke e-mail, goed ingerichte cloudopslag en moderne
-              beveiliging — zonder vast te zitten aan logge IT-contracten. Met
-              professionele 2e lijn IT-expertise helpt Jouw IT je vooruit.
+              Op zoek naar betrouwbare zakelijke IT-oplossingen of wil je het
+              beheer van je Microsoft 365 werkplekken uitbesteden? Als betrokken
+              ICT-partner voor zzp&apos;ers en kleine bedrijven in Almelo,
+              Enschede en Twente regelt Jouw IT veilige e-mail, moderne
+              cloudwerkplekken en 2e lijn expertise — zonder logge contracten.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -122,15 +124,15 @@ export default function ZakelijkDienstPage() {
               </a>
 
               <a
-                href="#wat-we-doen"
+                href="/tarieven"
                 className="rounded-xl border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
               >
-                Bekijk zakelijke oplossingen
+                Bekijk tarieven &amp; aanpak
               </a>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
-              <span>✓ Microsoft 365 &amp; Entra ID</span>
+              <span>✓ Microsoft 365 werkplekken &amp; Entra ID</span>
               <span>✓ Modern Security &amp; MFA</span>
               <span>✓ 2e lijn IT-expertise</span>
               <span>✓ Onderhoud buiten kantoortijden mogelijk</span>
@@ -147,11 +149,11 @@ export default function ZakelijkDienstPage() {
               Cloud &amp; Beveiliging
             </p>
             <h2 className="text-3xl font-bold tracking-tight md:text-5xl">
-              Zakelijke ondersteuning op maat
+              Zakelijke IT-oplossingen op maat
             </h2>
             <p className="mt-6 leading-8 text-slate-500">
-              Van een veilige start met Microsoft 365 tot het opschonen en
-              beveiligen van een bestaande zakelijke omgeving.
+              Van het uitbesteden van Microsoft 365 werkplekken tot het opschonen
+              en beveiligen van een bestaande bedrijfsomgeving in Twente.
             </p>
           </div>
 
@@ -172,6 +174,33 @@ export default function ZakelijkDienstPage() {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* TRANSPARANTIE OVER ZAKELIJKE INZET */}
+          <div className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-8 md:p-10">
+            <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+              <div className="max-w-2xl">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-700">
+                  Flexibele zakelijke ondersteuning
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-slate-900">
+                  Geen zware SLA-contracten, wel directe 2e lijn expertise
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  Je schakelt Jouw IT flexibel in op basis van een helder
+                  uurtarief (<strong className="text-slate-900">€ 45 per uur</strong>)
+                  of een duidelijke projectprijs vooraf voor jouw migratie of
+                  werkplekinrichting. Zo betaal je alleen voor daadwerkelijke
+                  ondersteuning.
+                </p>
+              </div>
+              <a
+                href="/tarieven"
+                className="shrink-0 rounded-xl bg-blue-700 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-blue-800"
+              >
+                Alle tarieven bekijken →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -223,7 +252,8 @@ export default function ZakelijkDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Neem vrijblijvend contact op om de mogelijkheden voor jouw
-                  onderneming in Almelo of omgeving te bespreken.
+                  onderneming in Almelo, Enschede of elders in Twente te
+                  bespreken.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
@@ -233,10 +263,10 @@ export default function ZakelijkDienstPage() {
                     Neem contact op →
                   </a>
                   <a
-                    href="/#diensten"
+                    href="/tarieven"
                     className="rounded-xl border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
                   >
-                    Alle diensten bekijken
+                    Tarieven bekijken
                   </a>
                 </div>
               </div>
@@ -283,6 +313,9 @@ export default function ZakelijkDienstPage() {
             <div className="flex flex-wrap gap-6 text-sm text-slate-400">
               <a href="/#diensten" className="hover:text-white">
                 Diensten
+              </a>
+              <a href="/tarieven" className="hover:text-white">
+                Tarieven
               </a>
               <a href="/#expertise" className="hover:text-white">
                 Expertise

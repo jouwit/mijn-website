@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Header from "../../../components/Header";
 
 export const metadata: Metadata = {
-  title: "Websitebeheer & Onderhoud in Twente",
+  title: "Websitebeheer & Onderhoud in Almelo, Enschede & Twente",
   description:
-    "Technisch websitebeheer, updates, beveiliging en snelle probleemoplossing voor bestaande websites in Almelo en Twente.",
+    "Technisch websitebeheer, updates, beveiliging, back-ups en snelle probleemoplossing voor bestaande websites in Almelo, Enschede en Twente. Doorlopend beheer of hulp op uurbasis.",
 };
 
 const deliverables = [
@@ -95,7 +95,7 @@ export default function WebsitesDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 01 • BESTAANDE WEBSITES IN Almelo &amp; TWENTE
+                DIENST 01 • BESTAANDE WEBSITES IN ALMELO, ENSCHEDE &amp; TWENTE
               </span>
             </div>
 
@@ -105,10 +105,11 @@ export default function WebsitesDienstPage() {
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Heb je al een website, maar loop je vast met updates, foutmeldingen,
-              beveiliging of domeininstellingen? Jouw IT neemt het technische
-              beheer en onderhoud uit handen zodat jouw online visitekaartje
-              altijd veilig en probleemloos blijft werken.
+              Heb je al een website, maar loop je vast met updates,
+              foutmeldingen, beveiliging of domeininstellingen? Jouw IT neemt het
+              technische websitebeheer en onderhoud voor ondernemers in Almelo,
+              Enschede en Twente uit handen — als vast maandelijks beheer of
+              voor losse probleemoplossing.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -120,11 +121,18 @@ export default function WebsitesDienstPage() {
               </a>
 
               <a
-                href="#wat-we-doen"
+                href="/tarieven"
                 className="rounded-xl border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
               >
-                Bekijk wat we doen
+                Bekijk tarieven &amp; pakketten
               </a>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
+              <span>✓ Updates, beveiliging &amp; back-ups</span>
+              <span>✓ Snelle hulp bij storingen</span>
+              <span>✓ Vast beheer of los uurtarief</span>
+              <span>✓ Onderhoud buiten piekuren mogelijk</span>
             </div>
           </div>
         </div>
@@ -163,6 +171,35 @@ export default function WebsitesDienstPage() {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* TRANSPARANTIE OVER BEHEER & KOSTEN */}
+          <div className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-8 md:p-10">
+            <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+              <div className="max-w-2xl">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-700">
+                  Flexibel geregeld
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-slate-900">
+                  Doorlopend websitebeheer of losse hulp per uur
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  Wil je volledig ontzorgd worden met periodieke updates,
+                  monitoring, back-ups en kleine wijzigingen? Kies dan voor ons
+                  vaste maandelijkse websitebeheer (
+                  <strong className="text-slate-900">€ 400 per maand</strong>).
+                  Heb je alleen incidenteel hulp nodig bij een foutmelding of
+                  DNS-instelling? Dan rekenen we gewoon{" "}
+                  <strong className="text-slate-900">€ 45 per uur</strong>.
+                </p>
+              </div>
+              <a
+                href="/tarieven"
+                className="shrink-0 rounded-xl bg-blue-700 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-blue-800"
+              >
+                Alle tarieven bekijken →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -214,7 +251,8 @@ export default function WebsitesDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Of het nu gaat om een eenmalige foutmelding of doorlopend
-                  onderhoud: neem gerust contact op voor eerlijk advies.
+                  onderhoud in Almelo, Enschede en Twente: neem gerust contact op
+                  voor eerlijk advies.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
@@ -224,10 +262,10 @@ export default function WebsitesDienstPage() {
                     Neem contact op →
                   </a>
                   <a
-                    href="/#diensten"
+                    href="/tarieven"
                     className="rounded-xl border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
                   >
-                    Alle diensten bekijken
+                    Tarieven bekijken
                   </a>
                 </div>
               </div>
@@ -274,6 +312,9 @@ export default function WebsitesDienstPage() {
             <div className="flex flex-wrap gap-6 text-sm text-slate-400">
               <a href="/#diensten" className="hover:text-white">
                 Diensten
+              </a>
+              <a href="/tarieven" className="hover:text-white">
+                Tarieven
               </a>
               <a href="/#expertise" className="hover:text-white">
                 Expertise

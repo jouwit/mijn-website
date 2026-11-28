@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Header from "../../../components/Header";
 
 export const metadata: Metadata = {
-  title: "Computerhulp & Laptop Service aan Huis (Almelo & Twente)",
+  title: "Computerhulp & Laptop Opschonen aan Huis (€ 45/uur) | Almelo & Twente",
   description:
-    "Snelle computerhulp aan huis: trage laptop versnellen, virussen verwijderen, Windows installatie en wifi-hulp. Ook 's avonds en in het weekend.",
+    "Snelle computerhulp aan huis in Almelo, Enschede en Twente: trage laptop opschonen (€ 45/uur, no cure no pay), virussen verwijderen, Windows 11 en wifi-hulp. Ook 's avonds en in het weekend.",
 };
 
 const deliverables = [
   {
     icon: "🚀",
-    title: "Trage PC of Laptop Versnellen",
+    title: "Trage PC of Laptop Opschonen",
     description:
-      "Grondige opschoning van overbodige programma's, opstartitems en vervuiling zodat jouw computer weer merkbaar sneller reageert.",
+      "Grondige opschoning van overbodige programma's, opstartitems en vervuiling zodat jouw laptop of pc weer merkbaar sneller reageert.",
   },
   {
     icon: "🛡",
@@ -97,7 +97,7 @@ export default function ComputerhulpDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 02 • HULP AAN HUIS IN Almelo &amp; TWENTE
+                DIENST 02 • HULP AAN HUIS IN ALMELO, ENSCHEDE &amp; TWENTE
               </span>
             </div>
 
@@ -107,10 +107,12 @@ export default function ComputerhulpDienstPage() {
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Een trage laptop, een printer die weigert of een foutmelding waar je
-              niet uitkomt? Jouw IT helpt particulieren en kleine ondernemers in
-              Twente met snelle, begrijpelijke computerhulp aan huis — gewoon in
-              de avonduren of het weekend wanneer het jou uitkomt.
+              Een trage laptop opschonen, een printer die weigert of een
+              foutmelding waar je niet uitkomt? Jouw IT helpt particulieren en
+              kleine ondernemers in Almelo, Enschede en heel Twente met snelle
+              computerhulp aan huis voor een helder tarief van{" "}
+              <strong className="font-semibold text-white">€ 45 per uur</strong>{" "}
+              — gewoon &apos;s avonds of in het weekend wanneer het jou uitkomt.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -122,18 +124,18 @@ export default function ComputerhulpDienstPage() {
               </a>
 
               <a
-                href="#wat-we-doen"
+                href="/tarieven"
                 className="rounded-xl border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
               >
-                Bekijk alle werkzaamheden
+                Bekijk tarieven &amp; voorwaarden
               </a>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
-              <span>✓ Hulp aan huis in Twente</span>
-              <span>✓ Ook &apos;s avonds &amp; in het weekend</span>
+              <span>✓ Helder tarief: € 45 per uur</span>
               <span>✓ No cure, no pay</span>
-              <span>✓ Heldere uitleg zonder vakjargon</span>
+              <span>✓ Ook &apos;s avonds &amp; in het weekend</span>
+              <span>✓ Hulp aan huis in Twente</span>
             </div>
           </div>
         </div>
@@ -172,6 +174,33 @@ export default function ComputerhulpDienstPage() {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* TRANSPARANTIE OVER KOSTEN */}
+          <div className="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-8 md:p-10">
+            <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+              <div className="max-w-2xl">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-700">
+                  Duidelijke kosten vooraf
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-slate-900">
+                  Wat kost een laptop opschonen of computerhulp aan huis?
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  Je betaalt bij Jouw IT een vast en overzichtelijk uurtarief van{" "}
+                  <strong className="text-slate-900">€ 45 per uur</strong>. Een
+                  grondige laptop-opschoonbeurt of PC-APK duurt gemiddeld 1 tot
+                  1,5 uur. Kunnen we het probleem niet oplossen? Dan geldt{" "}
+                  <strong className="text-slate-900">no cure, no pay</strong>.
+                </p>
+              </div>
+              <a
+                href="/tarieven"
+                className="shrink-0 rounded-xl bg-blue-700 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-blue-800"
+              >
+                Alle tarieven bekijken →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -223,7 +252,7 @@ export default function ComputerhulpDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Geen vrij hoeven nemen van je werk: wij komen langs in de
-                  avonduren of in het weekend in Almelo en omgeving.
+                  avonduren of in het weekend in Almelo, Enschede en omgeving.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
@@ -233,10 +262,10 @@ export default function ComputerhulpDienstPage() {
                     Neem contact op →
                   </a>
                   <a
-                    href="/#diensten"
+                    href="/tarieven"
                     className="rounded-xl border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
                   >
-                    Alle diensten bekijken
+                    Tarieven bekijken
                   </a>
                 </div>
               </div>
@@ -283,6 +312,9 @@ export default function ComputerhulpDienstPage() {
             <div className="flex flex-wrap gap-6 text-sm text-slate-400">
               <a href="/#diensten" className="hover:text-white">
                 Diensten
+              </a>
+              <a href="/tarieven" className="hover:text-white">
+                Tarieven
               </a>
               <a href="/#expertise" className="hover:text-white">
                 Expertise

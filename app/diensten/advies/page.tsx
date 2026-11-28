@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Header from "../../../components/Header";
 
 export const metadata: Metadata = {
-  title: "Onafhankelijk IT-Advies & Probleemoplossing",
+  title: "Onafhankelijk IT-Advies & Probleemoplossing in Twente",
   description:
-    "Eerlijk aankoopadvies voor laptops, thuisnetwerk & wifi verbeteren en slimme back-upoplossingen in begrijpelijke taal.",
+    "Eerlijk aankoopadvies voor laptops, thuisnetwerk & wifi verbeteren en slimme back-upoplossingen in Almelo, Enschede en Twente. In begrijpelijke taal.",
 };
 
 const deliverables = [
@@ -18,7 +18,7 @@ const deliverables = [
     icon: "📶",
     title: "Wifi & Thuisnetwerk Verbeteren",
     description:
-      "Slecht bereik op zolder of in de tuin? We brengen je netwerk in kaart en adviseren of installeren een stabiele wifi-oplossing (zoals Mesh).",
+      "Slecht bereik op zolder, op kantoor of in de tuin? We brengen je netwerk in kaart en adviseren of installeren een stabiele wifi-oplossing (zoals Mesh).",
   },
   {
     icon: "☁️",
@@ -34,15 +34,15 @@ const deliverables = [
   },
   {
     icon: "🖥️",
-    title: "Thuiswerkplek Inrichten",
+    title: "Thuiswerkplek & Kantoor Inrichten",
     description:
-      "Advies en installatie voor een ergonomische en betrouwbare thuiswerkplek met docking station, extra schermen en randapparatuur.",
+      "Advies en installatie voor een ergonomische en betrouwbare werkplek met docking station, extra schermen, zakelijke e-mail en randapparatuur.",
   },
   {
     icon: "🧩",
     title: "Second Opinion & Softwarekeuze",
     description:
-      "Twijfel je over een dure reparatieofferte of welk softwarepakket het beste past bij jouw situatie? Wij kijken eerlijk en objectief met je mee.",
+      "Twijfel je over een dure reparatieofferte of welk software- of Microsoft 365-pakket het beste past bij jouw situatie? Wij kijken eerlijk met je mee.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function AdviesDienstPage() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                DIENST 03 • EERLIJK IT-ADVIES IN Almelo &amp; TWENTE
+                DIENST 03 • EERLIJK IT-ADVIES IN ALMELO, ENSCHEDE &amp; TWENTE
               </span>
             </div>
 
@@ -108,9 +108,10 @@ export default function AdviesDienstPage() {
 
             <p className="mt-6 text-lg leading-8 text-slate-300">
               Zie je door de bomen het bos niet meer bij het kiezen van een
-              nieuwe laptop, hapert je wifi steeds of wil je jouw bestanden
-              beter beveiligen? Jouw IT geeft onafhankelijk en praktisch advies
-              op maat — zonder onnodige kosten of ingewikkelde vaktermen.
+              nieuwe laptop, hapert je wifi steeds of wil je jouw bestanden en
+              werkplek beter beveiligen? Jouw IT geeft onafhankelijk en
+              praktisch IT-advies aan particulieren en ondernemers in Twente —
+              zonder onnodige kosten of ingewikkelde vaktermen.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -122,10 +123,10 @@ export default function AdviesDienstPage() {
               </a>
 
               <a
-                href="#wat-we-doen"
+                href="/tarieven"
                 className="rounded-xl border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
               >
-                Bekijk waar we bij helpen
+                Bekijk onze tarieven
               </a>
             </div>
 
@@ -133,7 +134,7 @@ export default function AdviesDienstPage() {
               <span>✓ 100% onafhankelijk advies</span>
               <span>✓ Gewoon in begrijpelijke taal</span>
               <span>✓ Ook hulp bij installatie</span>
-              <span>✓ Lokaal in Twente</span>
+              <span>✓ Lokaal in Almelo, Enschede &amp; Twente</span>
             </div>
           </div>
         </div>
@@ -151,7 +152,8 @@ export default function AdviesDienstPage() {
             </h2>
             <p className="mt-6 leading-8 text-slate-500">
               Of je nu een nieuwe aankoop plant of een hardnekkig probleem in
-              huis wilt oplossen: wij zorgen voor een helder antwoord.
+              huis of op je werkplek wilt oplossen: wij zorgen voor een helder
+              antwoord.
             </p>
           </div>
 
@@ -223,7 +225,8 @@ export default function AdviesDienstPage() {
                 </h2>
                 <p className="mt-5 leading-8 text-blue-100">
                   Twijfel je voor een aankoop of loop je ergens tegenaan? Stuur
-                  gerust een berichtje — we denken graag met je mee.
+                  gerust een berichtje — we denken graag met je mee in Almelo,
+                  Enschede en omgeving.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
@@ -233,10 +236,10 @@ export default function AdviesDienstPage() {
                     Neem contact op →
                   </a>
                   <a
-                    href="/#diensten"
+                    href="/tarieven"
                     className="rounded-xl border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
                   >
-                    Alle diensten bekijken
+                    Tarieven bekijken
                   </a>
                 </div>
               </div>
@@ -283,6 +286,9 @@ export default function AdviesDienstPage() {
             <div className="flex flex-wrap gap-6 text-sm text-slate-400">
               <a href="/#diensten" className="hover:text-white">
                 Diensten
+              </a>
+              <a href="/tarieven" className="hover:text-white">
+                Tarieven
               </a>
               <a href="/#expertise" className="hover:text-white">
                 Expertise

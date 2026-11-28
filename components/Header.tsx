@@ -35,10 +35,10 @@ export default function Header() {
 
   const closeMenu = () => setMenuOpen(false);
 
-  // Aangepast menu inclusief Tarieven (verwijst naar de losse pagina /tarieven)
   const menuItems = [
     { id: "diensten", label: "Diensten", href: "/#diensten" },
     { id: "tarieven", label: "Tarieven", href: "/tarieven" },
+    { id: "blog", label: "Blog", href: "/blog" },
     { id: "expertise", label: "Expertise", href: "/#expertise" },
     { id: "over", label: "Over ons", href: "/#over" },
   ];
@@ -46,7 +46,6 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-
         {/* Logo */}
         <a
           href="/"
@@ -62,9 +61,9 @@ export default function Header() {
           />
 
           <div>
-            <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            <p className="text-2xl font-extrabold tracking-tight text-slate-900">
               Jouw <span className="text-blue-600">IT</span>
-            </h1>
+            </p>
 
             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               Websitebeheer • Computerhulp • Laptop Service • Advies
@@ -132,7 +131,6 @@ export default function Header() {
             </svg>
           )}
         </button>
-
       </div>
 
       {/* Mobile Menu */}

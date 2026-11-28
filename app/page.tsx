@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import Header from "../components/Header";
 
 const services = [
-{
+  {
     number: "01",
     icon: "🌐",
     title: "Websitebeheer & Onderhoud",
@@ -12,6 +12,7 @@ const services = [
       "Betrouwbaar beheer, technische updates, snelle probleemoplossing en optimalisatie zodat jouw bestaande website altijd veilig en goed blijft werken.",
     tags: ["Onderhoud", "Updates & Security", "Probleemoplossing"],
     href: "/diensten/websites",
+    cta: "Bekijk websitebeheer →",
   },
   {
     number: "02",
@@ -21,6 +22,7 @@ const services = [
       "Snelle en betrouwbare hulp aan huis of op locatie voor al je computer- en laptop-problemen, trage systemen en installaties.",
     tags: ["Trage PC opschonen", "APK", "Installatie"],
     href: "/diensten/computerhulp",
+    cta: "Meer over computerhulp →",
   },
   {
     number: "03",
@@ -30,6 +32,7 @@ const services = [
       "Persoonlijk advies bij de aankoop van nieuwe hardware, randapparatuur (printers/wifi) en hulp bij dataoverdracht of back-ups.",
     tags: ["Hardware advies", "Wifi & Printers", "Back-up"],
     href: "/diensten/advies",
+    cta: "Bekijk advies & oplossingen →",
   },
   {
     number: "04",
@@ -39,6 +42,7 @@ const services = [
       "Voor kleine ondernemers en zzp'ers bieden we optioneel ook beheer op maat voor Microsoft 365, Azure en moderne Security.",
     tags: ["Microsoft 365", "Security", "Azure"],
     href: "/diensten/zakelijk",
+    cta: "Meer over zakelijke M365 →",
   },
 ];
 
@@ -47,7 +51,7 @@ export default function Home() {
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
 
@@ -94,19 +98,20 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
               <span className="text-xs font-semibold tracking-wider text-blue-200">
-                LOKALE COMPUTERHULP & WEBSITEBEHEER IN ENCHEDE & OMGEVING
+                JOUW IT • COMPUTERHULP &amp; WEBSITEBEHEER IN ENSCHEDE &amp; TWENTE
               </span>
             </div>
 
             <h1 className="max-w-3xl text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Persoonlijke IT-hulp en websites die jouw organisatie{" "}
-              <span className="text-blue-400">laten groeien.</span>
+              Jouw IT: persoonlijke hulp en websitebeheer{" "}
+              <span className="text-blue-400">in Twente.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-slate-300">
-              Hulp nodig met je computer of laptop, een professionele website
-              laten beheren, of betrouwbaar IT-advies? Jouw IT staat klaar voor
-              particulieren en ondernemers in Twente.
+              Hulp nodig met je computer of laptop, bestaande websites laten
+              beheren, of betrouwbaar IT-advies en Microsoft 365-ondersteuning?
+              Jouw IT staat klaar voor particulieren en ondernemers in
+              Enschede, Almelo en omgeving.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -118,17 +123,17 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
               </a>
 
               <a
-                href="#diensten"
+                href="/tarieven"
                 className="rounded-xl border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
               >
-                Bekijk onze diensten
+                Bekijk tarieven
               </a>
             </div>
 
             <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
               <span>✓ Websitebeheer</span>
               <span>✓ Computerhulp aan huis</span>
-              <span>✓ Laptop & PC service</span>
+              <span>✓ Laptop &amp; PC service</span>
               <span>✓ Deskundig advies</span>
             </div>
           </div>
@@ -154,7 +159,7 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  ["🌐", "Websitebeheer", "Hosting & Design"],
+                  ["🌐", "Websitebeheer", "Hosting & Onderhoud"],
                   ["💻", "Computerhulp", "APK & Opschonen"],
                   ["🛠", "Advies", "Hardware & Wifi"],
                   ["☁", "Zakelijk", "M365 & Cloud"],
@@ -250,7 +255,7 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
                 </div>
 
                 <div className="mt-7 font-semibold text-blue-700">
-                  Ontdek de dienst →
+                  {service.cta}
                 </div>
               </a>
             ))}
@@ -275,8 +280,9 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
 
             <p className="mt-7 leading-8 text-slate-400">
               Of het nu gaat om een trage laptop die opgeschoond moet worden, een
-              nieuwe printer die gekoppeld moet worden, of een strakke website:
-              je krijgt altijd deskundige hulp met een persoonlijke aanpak.
+              nieuwe printer die gekoppeld moet worden, of het beheren van je
+              bestaande website: je krijgt altijd deskundige hulp met een
+              persoonlijke aanpak.
             </p>
 
             <a
@@ -362,7 +368,7 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
         <div className="mx-auto max-w-4xl px-6">
           <div className="mx-auto mb-16 text-center">
             <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-blue-700">
-              Vragen & Antwoorden
+              Vragen &amp; Antwoorden
             </p>
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
               Veelgestelde vragen
@@ -589,6 +595,9 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
             <div className="flex flex-wrap gap-6 text-sm text-slate-400">
               <a href="#diensten" className="hover:text-white">
                 Diensten
+              </a>
+              <a href="/tarieven" className="hover:text-white">
+                Tarieven
               </a>
               <a href="#expertise" className="hover:text-white">
                 Expertise
